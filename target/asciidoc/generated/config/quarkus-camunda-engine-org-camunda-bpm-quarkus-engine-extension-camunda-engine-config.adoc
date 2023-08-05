@@ -1,0 +1,92 @@
+
+:summaryTableId: quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config
+[.configuration-legend]
+icon:lock[title=Fixed at build time] Configuration property fixed at build time - All other configuration properties are overridable at runtime
+[.configuration-reference, cols="80,.^10,.^10"]
+|===
+
+h|[[quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_configuration]]link:#quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_configuration[Configuration property]
+
+h|Type
+h|Default
+
+a|icon:lock[title=Fixed at build time] [[quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.job-executor.thread-pool.max-pool-size]]`link:#quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.job-executor.thread-pool.max-pool-size[quarkus.camunda-engine.job-executor.thread-pool.max-pool-size]`
+
+[.description]
+--
+Sets the maximum number of threads that can be present in the Quarkus-managed thread pool for the Camunda JobExecutor. The default value is 10.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_CAMUNDA_ENGINE_JOB_EXECUTOR_THREAD_POOL_MAX_POOL_SIZE+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_CAMUNDA_ENGINE_JOB_EXECUTOR_THREAD_POOL_MAX_POOL_SIZE+++`
+endif::add-copy-button-to-env-var[]
+--|int 
+|`0`
+
+
+a|icon:lock[title=Fixed at build time] [[quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.job-executor.thread-pool.queue-size]]`link:#quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.job-executor.thread-pool.queue-size[quarkus.camunda-engine.job-executor.thread-pool.queue-size]`
+
+[.description]
+--
+Sets the size of the Quarkus-managed JobExecutor queue. The default value is 3.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_CAMUNDA_ENGINE_JOB_EXECUTOR_THREAD_POOL_QUEUE_SIZE+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_CAMUNDA_ENGINE_JOB_EXECUTOR_THREAD_POOL_QUEUE_SIZE+++`
+endif::add-copy-button-to-env-var[]
+--|int 
+|`0`
+
+
+a|icon:lock[title=Fixed at build time] [[quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.datasource]]`link:#quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.datasource[quarkus.camunda-engine.datasource]`
+
+[.description]
+--
+Select a datasource by name or the default datasource is used.
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_CAMUNDA_ENGINE_DATASOURCE+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_CAMUNDA_ENGINE_DATASOURCE+++`
+endif::add-copy-button-to-env-var[]
+--|string 
+|
+
+
+a|icon:lock[title=Fixed at build time] [[quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.generic-config-generic-config]]`link:#quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.generic-config-generic-config[quarkus.camunda-engine.generic-config]`
+
+[.description]
+--
+The Camunda ProcessEngineConfiguration properties. For more details,
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_CAMUNDA_ENGINE_GENERIC_CONFIG+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_CAMUNDA_ENGINE_GENERIC_CONFIG+++`
+endif::add-copy-button-to-env-var[]
+--|`Map<String,String>` 
+|
+
+
+a|icon:lock[title=Fixed at build time] [[quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.job-executor.generic-config-generic-config]]`link:#quarkus-camunda-engine-org-camunda-bpm-quarkus-engine-extension-camunda-engine-config_quarkus.camunda-engine.job-executor.generic-config-generic-config[quarkus.camunda-engine.job-executor.generic-config]`
+
+[.description]
+--
+The Camunda JobExecutor configuration properties. For more details,
+
+ifdef::add-copy-button-to-env-var[]
+Environment variable: env_var_with_copy_button:+++QUARKUS_CAMUNDA_ENGINE_JOB_EXECUTOR_GENERIC_CONFIG+++[]
+endif::add-copy-button-to-env-var[]
+ifndef::add-copy-button-to-env-var[]
+Environment variable: `+++QUARKUS_CAMUNDA_ENGINE_JOB_EXECUTOR_GENERIC_CONFIG+++`
+endif::add-copy-button-to-env-var[]
+--|`Map<String,String>` 
+|
+
+|===
